@@ -1,0 +1,6 @@
+framework module DappbirdsSDK {
+  umbrella header "DappbirdsSDK.h"
+
+  export *
+  module * { export * }
+}

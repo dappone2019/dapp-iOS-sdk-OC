@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  ONTWalletDemo
+//
+//  Created by 区块链 on 2019/4/28.
+//  Copyright © 2019 com.fengniaomall.ontwallet. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define IS_IPHONE_X ([UIScreen mainScreen].bounds.size.height >= 812)
+#define NAVIGATION_HEIGHT (IS_IPHONE_X ? 88.0f : 64.0f)
+#define TABBAR_HEIGHT (IS_IPHONE_X ? 83.0f : 49.0f)
+
+#define BlackStyleColor UIColorWithHexStr(0x333333)
+#define GrayStyleColor UIColorWithHexStr(0x909090)
+#define MainColor UIColorWithHexStr(0x4C50FF)
+#define BackgroundColor UIColorWithHexStr(0xf6f7f8)
+#define RedColor UIColorWithHexStr(0xFB283C)
+#define GreenColor UIColorWithHexStr(0x1aa454)
+
+#define UIColorWithHexStr(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0]
+
+#endif
+
+#endif /* PrefixHeader_pch */
