@@ -67,15 +67,13 @@ typedef void (^payCompletionBlock)(BOOL success, NSString * msg);
 
 /**
  modal创建支付界面
- @param from_address 当前用户地址
  @param contract_address 合约地址
  @param _signature 签名串md5
  @param order_no 订单号
  @param amount 支付数量
  @param _timestamp 时间戳
-
  */
-- (void)createdPayWalletWithFrom_address:(NSString *)from_address contract_address:(NSString *)contract_address _signature:(NSString *)_signature order_no:(NSString *)order_no amount:(NSString *)amount _timestamp:(NSString *)_timestamp;
+- (void)createdPayWalletWithContract_address:(NSString *)contract_address _signature:(NSString *)_signature order_no:(NSString *)order_no amount:(NSString *)amount _timestamp:(NSString *)_timestamp;
 
 /**
  * 支付订单结果的回调
@@ -103,9 +101,9 @@ typedef void (^payCompletionBlock)(BOOL success, NSString * msg);
 - (void)creatWalletWithName:(NSString *)name password:(NSString *)pwd keyStore:(NSString *)keyStore callback:(void (^)(BOOL success, NSString *address, NSString *msg))callback ;
 
 /**
- * 通过地址查询交易明细
+ * 查询当前账户的交易明细
  */
-- (void)getBalanceWithAddress:(NSString *)address callback:(void (^)(NSDictionary *balanceDict, NSError *error))callback;
+- (void)getCurrentWalletBalanceCallback:(void (^)(NSDictionary *balanceDict, NSError *error))callback;
 
 /**
  * 统一支付接口

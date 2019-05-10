@@ -50,6 +50,9 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self queryIsExitWallet];
+    if (self.tableView != nil) {
+        [self.tableView reloadData];
+    }
 }
 
 
@@ -187,7 +190,7 @@
  * 1.查询地址余额
  */
 - (void)getBalanceWithAddress {
-    [[DBWalletManager shared] getBalanceWithAddress:self.addressLabel.text callback:^(NSDictionary *balanceDict, NSError *error) {
+    [[DBWalletManager shared] getCurrentWalletBalanceCallback:^(NSDictionary *balanceDict, NSError *error) {
         self.ongBalance.text = [NSString stringWithFormat:@"ONG余额: %@", balanceDict[@"ONG"]];
     }];
 }
@@ -234,9 +237,9 @@
  * 4.统一支付
  */
 - (void)modalToPayViewController {
-    int random = arc4random() % 10000;
+    int random = arc4random() % 1000000;
     NSString *order_no = [NSString stringWithFormat:@"ordernomber%d", random];
-    [[DBWalletManager shared] createdPayWalletWithFrom_address:self.addressLabel.text contract_address:@"48628e2aa44a7e7f2d8e9fbe4001d731713789ca" _signature:@"cf38f9b6d2dc07784e727066f2fdac77" order_no:order_no amount:@"0.1" _timestamp:@"1556543707"];
+    [[DBWalletManager shared] createdPayWalletWithContract_address:@"48628e2aa44a7e7f2d8e9fbe4001d731713789ca" _signature:@"cf38f9b6d2dc07784e727066f2fdac77" order_no:order_no amount:@"0.1" _timestamp:@"1556543707"];
     
     [DBWalletManager shared].payCallBack = ^(BOOL success, NSString *msg) {
         if (success) {
