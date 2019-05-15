@@ -45,7 +45,6 @@ typedef void (^payCompletionBlock)(BOOL success, NSString * msg);
  */
 - (void)setApp_id:(NSString *)app_id openid:(NSString *)openid chain_type:(NSString *)chain_type debugMode:(BOOL)debug;
 
-
 /**
  * 查询是否存在钱包,存在就回调出地址
  * hasWallet 是否存在钱包
@@ -85,6 +84,11 @@ typedef void (^payCompletionBlock)(BOOL success, NSString * msg);
  */
 - (void)queryWalletDetails;
 
+/**
+ * 查询当前账户的余额
+ */
+- (void)getCurrentWalletBalanceCallback:(void (^)(NSDictionary *balanceDict, NSError *error))callback;
+
 
 
 
@@ -99,11 +103,6 @@ typedef void (^payCompletionBlock)(BOOL success, NSString * msg);
  * 通过keyStore导入钱包
  */
 - (void)creatWalletWithName:(NSString *)name password:(NSString *)pwd keyStore:(NSString *)keyStore callback:(void (^)(BOOL success, NSString *address, NSString *msg))callback ;
-
-/**
- * 查询当前账户的交易明细
- */
-- (void)getCurrentWalletBalanceCallback:(void (^)(NSDictionary *balanceDict, NSError *error))callback;
 
 /**
  * 统一支付接口

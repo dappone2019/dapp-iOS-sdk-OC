@@ -187,7 +187,7 @@
 }
 
 /**
- * 1.查询地址余额
+ * 1.查询当前钱包余额
  */
 - (void)getBalanceWithAddress {
     [[DBWalletManager shared] getCurrentWalletBalanceCallback:^(NSDictionary *balanceDict, NSError *error) {
