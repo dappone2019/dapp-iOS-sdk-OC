@@ -13,8 +13,8 @@
 		830160672281324D00F66904 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 830160662281324D00F66904 /* main.m */; };
 		8301606F2281329800F66904 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8301606E2281329800F66904 /* HomeViewController.m */; };
 		83016073228135FF00F66904 /* neoutils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83016072228135FF00F66904 /* neoutils.framework */; };
-		839B259B228BE5BA005E471B /* DappbirdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839B2599228BE5B9005E471B /* DappbirdsSDK.framework */; };
-		839B259C228BE5BA005E471B /* DappbirdsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 839B259A228BE5BA005E471B /* DappbirdsBundle.bundle */; };
+		8347BF0022942EE4006AC888 /* DappbirdsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8347BEFE22942EE4006AC888 /* DappbirdsSDK.framework */; };
+		8347BF032294304B006AC888 /* DappbirdsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8347BF022294304B006AC888 /* DappbirdsBundle.bundle */; };
 		E06EE224A825729FDB39767F /* libPods-DappbirdsSDKTestDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7FDFB2D9891D32219AD81E /* libPods-DappbirdsSDKTestDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +30,9 @@
 		8301606D2281329800F66904 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		8301606E2281329800F66904 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		83016072228135FF00F66904 /* neoutils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = neoutils.framework; sourceTree = "<group>"; };
+		8347BEFE22942EE4006AC888 /* DappbirdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DappbirdsSDK.framework; sourceTree = "<group>"; };
+		8347BF022294304B006AC888 /* DappbirdsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DappbirdsBundle.bundle; sourceTree = "<group>"; };
 		8384981522819B3800A35D3A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		839B2599228BE5B9005E471B /* DappbirdsSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DappbirdsSDK.framework; sourceTree = "<group>"; };
-		839B259A228BE5BA005E471B /* DappbirdsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DappbirdsBundle.bundle; sourceTree = "<group>"; };
 		9E2CE47325A6B637C84386C5 /* Pods-DappbirdsSDKTestDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DappbirdsSDKTestDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DappbirdsSDKTestDemo/Pods-DappbirdsSDKTestDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DC7FDFB2D9891D32219AD81E /* libPods-DappbirdsSDKTestDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DappbirdsSDKTestDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839B259B228BE5BA005E471B /* DappbirdsSDK.framework in Frameworks */,
+				8347BF0022942EE4006AC888 /* DappbirdsSDK.framework in Frameworks */,
 				E06EE224A825729FDB39767F /* libPods-DappbirdsSDKTestDemo.a in Frameworks */,
 				83016073228135FF00F66904 /* neoutils.framework in Frameworks */,
 			);
@@ -89,8 +89,8 @@
 		830160562281324C00F66904 /* DappbirdsSDKTestDemo */ = {
 			isa = PBXGroup;
 			children = (
-				839B259A228BE5BA005E471B /* DappbirdsBundle.bundle */,
-				839B2599228BE5B9005E471B /* DappbirdsSDK.framework */,
+				8347BF022294304B006AC888 /* DappbirdsBundle.bundle */,
+				8347BEFE22942EE4006AC888 /* DappbirdsSDK.framework */,
 				83016072228135FF00F66904 /* neoutils.framework */,
 				83016298228171B900F66904 /* Classes */,
 				830160602281324D00F66904 /* Assets.xcassets */,
@@ -173,7 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				830160642281324D00F66904 /* LaunchScreen.storyboard in Resources */,
-				839B259C228BE5BA005E471B /* DappbirdsBundle.bundle in Resources */,
+				8347BF032294304B006AC888 /* DappbirdsBundle.bundle in Resources */,
 				830160612281324D00F66904 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
