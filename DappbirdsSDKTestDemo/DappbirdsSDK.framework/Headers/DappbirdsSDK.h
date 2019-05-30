@@ -31,6 +31,9 @@ FOUNDATION_EXPORT const unsigned char DappbirdsSDKVersionString[];
 #import <DappbirdsSDK/ECKeySignature.h>
 #import <DappbirdsSDK/ONTAttribute.h>
 #import <DappbirdsSDK/ONTSignature.h>
+#import <DappbirdsSDK/NSMutableData+Extend.h>
+#import <DappbirdsSDK/ONTBalance.h>
+
 
 
 
