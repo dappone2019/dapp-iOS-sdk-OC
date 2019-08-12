@@ -18,21 +18,10 @@ FOUNDATION_EXPORT const unsigned char DappbirdsSDKVersionString[];
 #import <DappbirdsSDK/DBWalletManager.h>
 #import <DappbirdsSDK/MBProgressHUD+MBProgressHUD_show.h>
 #import <DappbirdsSDK/MBProgressHUD.h>
-#import <DappbirdsSDK/ONTECKey.h>
-#import <DappbirdsSDK/ONTAccount.h>
-#import <DappbirdsSDK/ONTRpcApi.h>
-#import <DappbirdsSDK/ONTTransaction.h>
 
-#import <DappbirdsSDK/ONTTransactionNotifyInfo.h>
-#import <DappbirdsSDK/ONTPublicKey.h>
-#import <DappbirdsSDK/ONTPrivateKey.h>
-#import <DappbirdsSDK/ONTAddress.h>
-#import <DappbirdsSDK/ECKey.h>
-#import <DappbirdsSDK/ECKeySignature.h>
-#import <DappbirdsSDK/ONTAttribute.h>
-#import <DappbirdsSDK/ONTSignature.h>
-#import <DappbirdsSDK/NSMutableData+Extend.h>
-#import <DappbirdsSDK/ONTBalance.h>
+
+
+
 
 
 

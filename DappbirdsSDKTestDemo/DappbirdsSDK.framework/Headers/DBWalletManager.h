@@ -119,6 +119,8 @@ typedef void (^payCompletionBlock)(BOOL success, NSString * msg);
  */
 - (void)deleteAccountmodel;
 
+- (void)setDebug: (BOOL)isDEBUGGER;
+
 /**
  * 支付订单成功dismiss的回调
  */
